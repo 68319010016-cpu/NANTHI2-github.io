@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เว็บไซต์ตัวอย่าง</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: "Tahoma", sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    body{
+        background:#f4f4f4;
+    }
+
+    /* เมนูด้านบน */
+    nav{
+        position: fixed;
+        top:0;
+        width:100%;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        padding:15px 0;
+        box-shadow:0 2px 10px rgba(0,0,0,0.3);
+        z-index:1000;
+    }
+
+    nav ul{
+        display:flex;
+        justify-content:center;
+        list-style:none;
+    }
+
+    nav ul li{
+        margin:0 20px;
+    }
+
+    nav ul li a{
+        color:white;
+        text-decoration:none;
+        font-size:18px;
+        font-weight:bold;
+        padding:10px 15px;
+        border-radius:8px;
+        transition:0.3s;
+    }
+
+    nav ul li a:hover{
+        background:white;
+        color:#1e3c72;
+    }
+
+    /* ส่วนเนื้อหา */
+    section{
+        height:100vh;
+        padding-top:100px;
+        text-align:center;
+    }
+
+    #home{
+        background:#e3f2fd;
+    }
+
+    #about{
+        background:#fff3cd;
+    }
+
+    #service{
+        background:#d4edda;
+    }
+
+    #contact{
+        background:#f8d7da;
+    }
+
+    h1{
+        margin-top:100px;
+        font-size:40px;
+        color:#333;
+    }
+
+    p{
+        font-size:20px;
+        margin-top:20px;
+        color:#555;
+    }
+
+</style>
+</head>
+<body>
+
+<!-- เมนู -->
+<nav>
+    <ul>
+        <li><a href="#home">หน้าแรก</a></li>
+        <li><a href="#about">เกี่ยวกับเรา</a></li>
+        <li><a href="#service">บริการ</a></li>
+        <li><a href="#contact">ติดต่อ</a></li>
+    </ul>
+</nav>
+
+<!-- หน้าแรก -->
+<section id="home">
+    <h1>หน้าแรก</h1>
+    <p>ยินดีต้อนรับสู่เว็บไซต์ตัวอย่าง</p>
+</section>
+
+<!-- เกี่ยวกับเรา -->
+<section id="about">
+    <h1>เกี่ยวกับเรา</h1>
+    <p>เว็บไซต์นี้จัดทำขึ้นเพื่อการศึกษา</p>
+</section>
+
+<!-- บริการ -->
+<section id="service">
+    <h1>บริการ</h1>
+    <p>ให้บริการด้านการออกแบบเว็บไซต์และระบบสารสนเทศ</p>
+</section>
+
+<!-- ติดต่อ -->
+<section id="contact">
+    <h1>ติดต่อ</h1>
+    <p>อีเมล : example@gmail.com<br>
+       โทรศัพท์ : 08X-XXX-XXXX
+    </p>
+</section>
+
+</body>
+</html>
